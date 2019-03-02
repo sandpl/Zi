@@ -7,6 +7,7 @@
  */
 
 require_once "../framework/Zi.php";
+//TODO 这里需要引入 vendor文件
 
 $app = new \zi\Application();
 $app->run();

@@ -15,7 +15,6 @@ class Application extends Component     //被继承的时候应该自动被加�
 
         parent::__construct();
 
-
         Zi::$app = $this;
         $this->init();
         $this->bootStrap(); //      启动应用
@@ -48,11 +47,14 @@ class Application extends Component     //被继承的时候应该自动被加�
 
     }
 
+    //处理请求
     public function handleRequest()
     {
-        //$request = Zi::$container->get();
+
+
     }
 
+    //结束请求
     public function end($status, $response)
     {
         $response->send();

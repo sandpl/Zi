@@ -251,7 +251,7 @@ class Container extends Component
     {
         foreach ($dependencies as $index => $dependency) {
             if ($dependency instanceof Instance) {
-                //向容器索要所依赖的实例，递归调用 yii\di\Container::get()
+                //向容器索要所依赖的实例，递归调用 Z\di\Container::get()
                 $dependencies[$index] = $this->get($dependency->id);    //id 为实例的唯一标识
             }
         }

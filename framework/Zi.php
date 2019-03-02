@@ -48,7 +48,7 @@ class Zi
         } else {
             return;
         }
-        include $classFile;
+        require $classFile;
 
     }
 
